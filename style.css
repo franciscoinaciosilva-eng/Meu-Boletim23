@@ -1,0 +1,148 @@
+/* Configurações gerais da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Estilo do Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  border: 1px solid #00ff66;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
+}
+
+header h1 {
+  color: #00ff66;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+}
+
+.estudante {
+  margin-top: 8px;
+  color: #cccccc;
+}
+
+/* Layout e Estilo dos Cards com efeito Neon */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1 1 180px;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #00ff66;
+  box-shadow: 0 0 8px rgba(0, 255, 102, 0.3);
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+  margin-bottom: 8px;
+}
+
+.destaque-card {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ff66;
+}
+
+.tag-frequencia {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #121212;
+  background-color: #00ff66;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Estilo da Tabela Responsiva */
+.tabela-container {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #00ff66;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
+}
+
+.tabela-container h2 {
+  color: #00ff66;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #333333;
+}
+
+th {
+  background-color: #2a2a2a;
+  color: #00ff66;
+}
+
+tr:hover {
+  background-color: #252525;
+}
+
+/* Destaque para as Situações */
+.situacao-bom {
+  color: #00ff66;
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #ff5555;
+  font-weight: bold;
+}
+
+.situacao-indisponivel {
+  color: #888888;
+}
+
+/* Ajustes para telas de celular */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  th, td {
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+}
