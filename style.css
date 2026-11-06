@@ -269,6 +269,63 @@ header h1 {
   font-weight: bold;
 }
 
+/* Área de Gráficos (Grid Responsivo) */
+.area-graficos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.grafico-card {
+  background-color: #1e1e1e;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #00ff66;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.grafico-card.card-perigo {
+  border-color: #ff5555;
+  box-shadow: 0 0 12px rgba(255, 85, 85, 0.4);
+}
+
+.grafico-card h2 {
+  color: #00ff66;
+  margin-bottom: 15px;
+  font-size: 1.15rem;
+}
+
+.grafico-header-faltas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.grafico-header-faltas h2 {
+  margin-bottom: 0;
+}
+
+.badge-perigo {
+  background-color: #ff5555;
+  color: #ffffff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.grafico-container {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  min-height: 280px;
+}
+
 /* Estilo da Tabela Responsiva */
 .tabela-container {
   background-color: #1e1e1e;
@@ -323,10 +380,25 @@ tr:hover {
   color: #888888;
 }
 
-/* Ajustes para telas de celular */
+/* Ajustes para telas de Tablet */
+@media (max-width: 992px) {
+  .area-graficos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Ajustes para telas de Celular */
 @media (max-width: 600px) {
   body {
     padding: 10px;
+  }
+  
+  .area-graficos {
+    grid-template-columns: 1fr;
+  }
+  
+  .grafico-container {
+    min-height: 250px;
   }
   
   th, td {
